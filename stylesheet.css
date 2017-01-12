@@ -1,0 +1,104 @@
+/*keyframes*/
+@-webkit-keyframes slide {
+  from {transform: translate(-500px, 0px);}
+  to {transform: translate(0px, 0px);}
+}
+@-webkit-keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+.container-fluid {
+  height: inherit;
+}
+.row {
+  height: inherit;
+}
+.sidebar {
+  background-color: #A30015;
+  border-right-style: ridge;
+  border-width: 7px;
+  border-color: #DAD2D8;
+  height: inherit;
+  position: absolute;
+  z-index: 1;
+}
+.logo {
+  width: 70%;
+  margin-top: 20px;
+}
+h1 {
+  color: white;
+}
+.btn, .btn-default {
+  margin: 50px 0px;
+  width: 100%;
+  display: block;
+  background-color: #13323C;
+  color: white;
+  border-color: #13323C;
+  border-width: 4px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 15px;
+  font-size: 20px;
+}
+.btn-default:hover {
+    color: #13323C;
+    background-color: white;
+    border-color: white;
+}
+.btn-default:active {
+  background-color: white;
+  border-color: white;
+}
+.btn-default:focus {
+  background-color: white;
+  border-color: white;
+}
+#numQuotes {
+  font-size: 1.5em;
+  color: white;
+}
+.quote-box {
+  background-color: #F4F2F4;
+  height: inherit;
+  position: relative;
+  float: right;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.quotation-1 {
+  width: 100px;
+  height: 79px;
+  margin-top: 5%;
+}
+.quotation-2 {
+  width: 100px;
+  height: 79px;
+  float: right;
+  margin-right: -5px;
+  margin-top: 10%;
+}
+.quote {
+  padding-top: 15%;
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  position: relative;
+}
+.author {
+  font-size: 1.5em;
+  margin-left: 80%;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  position: relative;
+}
+.animated {
+  -webkit-animation: slide 0.7s linear 1;
+}
