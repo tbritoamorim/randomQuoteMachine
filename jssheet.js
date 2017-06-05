@@ -17,7 +17,6 @@ var getQuote = function() {
     url: apiQuote,
     headers: headers,
     success: function(response) {
-      response = JSON.parse(response);
       processQuotes(response);
       num++;
     },
